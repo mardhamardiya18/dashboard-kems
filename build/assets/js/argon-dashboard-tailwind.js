@@ -117,3 +117,18 @@ btnCloseCreate.addEventListener('click', function(e){
   popupWrapperCreate.style.display = "none";
   e.preventDefault()
 })
+
+// Popup Delete
+const btnDelete = document.querySelector('#btndelete');
+
+btnDelete.addEventListener('click', function(e){
+  let confirmation = confirm("Apakah Anda yakin ingin menghapus item ini?");
+  if (confirmation) {
+    alert('item terhapus!')
+  } else {
+    
+  }
+
+  e.preventDefault()
+})
+
